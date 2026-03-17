@@ -30,7 +30,7 @@ const Press: React.FC = () => {
                 </span>
             </div>
             <p className="text-stone font-light font-sans text-lg leading-relaxed max-w-2xl group-hover:text-stone/80 transition-colors">
-                \"Flourishing Despite COVID: Musician & Consummate Artist Drew Bordeaux\"
+                "Flourishing Despite COVID: Musician & Consummate Artist Drew Bordeaux"
             </p>
         </a>
 
@@ -52,7 +52,7 @@ const Press: React.FC = () => {
                 </span>
             </div>
             <p className="text-stone font-light font-sans text-lg leading-relaxed max-w-2xl group-hover:text-stone/80 transition-colors">
-                \"Tarrytown Musician Lets His 'Impulse / Instinct' Lead the Way\"
+                "Tarrytown Musician Lets His 'Impulse / Instinct' Lead the Way"
             </p>
         </a>
 

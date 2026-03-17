@@ -13,7 +13,7 @@ const Producer: React.FC = () => {
         <span className="text-spruce text-xs uppercase tracking-[0.25em] font-bold block mb-6">Studio</span>
         <h1 className="text-5xl md:text-8xl font-display uppercase font-bold text-ink mb-8 tracking-wide">Production</h1>
         <p className="text-lg md:text-2xl text-stone font-light leading-relaxed max-w-2xl md:border-l-4 border-spruce/20 md:pl-8 mx-auto md:mx-0 font-sans">
-           Helping artists make cohesive records\u2014where songs, performances, and arrangements live in the same world.
+           Helping artists make cohesive records—where songs, performances, and arrangements live in the same world.
         </p>
       </section>
 
@@ -33,7 +33,7 @@ const Producer: React.FC = () => {
                     Drew brings the same approach to music production as creative direction: treating each project as worldbuilding. The work starts by paying close attention to the influences, moods, and ideas already present in a song, then shaping the record around them to create a cohesive, immersive experience.
                   </p>
                   <p>
-                    The aim is to carry the heart of a project all the way through\u2014so it lands with weight and clarity on stage, through headphones, and across the broader artistic world surrounding the music. That way of working often extends into the visual identity supporting the record as well. More on that can be found at <a href="https://drewimages.studio" target="_blank" rel="noreferrer" className="text-ink font-bold hover:text-spruce transition-colors">drewimages.studio</a>.
+                    The aim is to carry the heart of a project all the way through—so it lands with weight and clarity on stage, through headphones, and across the broader artistic world surrounding the music. That way of working often extends into the visual identity supporting the record as well. More on that can be found at <a href="https://drewimages.studio" target="_blank" rel="noreferrer" className="text-ink font-bold hover:text-spruce transition-colors">drewimages.studio</a>.
                   </p>
                 </div>
             </div>
@@ -54,7 +54,7 @@ const Producer: React.FC = () => {
                     </div>
 
                     <div className="space-y-1 mb-6">
-                        <h4 className="text-ink text-2xl font-display uppercase tracking-wide">Becki Davis \u2014 <span className="text-stone">Lost & Found</span></h4>
+                        <h4 className="text-ink text-2xl font-display uppercase tracking-wide">Becki Davis — <span className="text-stone">Lost & Found</span></h4>
                         <span className="text-stone/40 font-sans text-sm block">(2025)</span>
                         <span className="text-[10px] text-spruce uppercase tracking-widest font-bold block pt-2">Full Production / Mixing</span>
                     </div>

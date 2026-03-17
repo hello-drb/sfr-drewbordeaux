@@ -60,7 +60,7 @@ const Visuals: React.FC = () => {
                          </div>
                          <div className="flex items-center gap-3 text-sm text-ink font-bold font-sans">
                             <span className="w-2 h-2 rounded-full bg-stone block shrink-0" />
-                             <span>Clients include Jazzmeia Horn, Cyrille Aim\u00e9e, and Nicole Zuraitis</span>
+                             <span>Clients include Jazzmeia Horn, Cyrille Aimée, and Nicole Zuraitis</span>
                          </div>
                     </div>
                 </div>

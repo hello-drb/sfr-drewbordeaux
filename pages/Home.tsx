@@ -182,7 +182,7 @@ const Home: React.FC = () => {
             <div className="w-16 h-[2px] bg-white/30 mx-auto"></div>
             
             <p className="font-sans text-white/90 font-light text-base md:text-lg max-w-2xl mx-auto leading-relaxed">
-               A New York\u2013based artist and producer, Drew Bordeaux builds his music around percussive acoustic rhythm and the electric violin\u2019s searing textures. From his solo debut <em className="font-serif italic text-white">Impulse / Instinct</em> to his production work on Becki Davis\u2019s <em className="font-serif italic text-white">Lost & Found</em>, Bordeaux\u2019s work reflects a consistent focus on craft, cohesion, and long-form artistic vision.
+               A New York–based artist and producer, Drew Bordeaux builds his music around percussive acoustic rhythm and the electric violin’s searing textures. From his solo debut <em className="font-serif italic text-white">Impulse / Instinct</em> to his production work on Becki Davis’s <em className="font-serif italic text-white">Lost & Found</em>, Bordeaux’s work reflects a consistent focus on craft, cohesion, and long-form artistic vision.
             </p>
 
             <div className="pt-8 flex flex-col items-center gap-6">

@@ -56,10 +56,10 @@ const Music: React.FC = () => {
 
         <div className="prose prose-stone prose-lg text-stone font-medium font-sans">
              <p className="first-letter:text-5xl first-letter:font-display first-letter:font-bold first-letter:text-spruce first-letter:float-left first-letter:mr-3 leading-loose">
-                A self-produced debut that establishes a distinct recorded voice. The record spans intimate songs and bigger, outward-facing ones, with \"Alkaline\" at its emotional center and \"Last Son\" reflecting the moment the songs were written in.
+                A self-produced debut that establishes a distinct recorded voice. The record spans intimate songs and bigger, outward-facing ones, with "Alkaline" at its emotional center and "Last Son" reflecting the moment the songs were written in.
              </p>
              <p className="leading-loose">
-                The album also includes a bold reworking of Genesis's \"Land of Confusion,\" transforming the pop-rock classic into a prescient and anthemic protest song.
+                The album also includes a bold reworking of Genesis's "Land of Confusion," transforming the pop-rock classic into a prescient and anthemic protest song.
              </p>
 
              {/* Apple Music Embed */}
@@ -93,7 +93,6 @@ const Music: React.FC = () => {
          <div className="relative z-10 max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 md:gap-24 items-center">
             
             {/* Left: Album Art */}
-            {/* Removed ordering classes so default DOM order (Image first) applies on mobile, giving us Image on Top */}
             <div className="relative group perspective-1000">
                  <div className="absolute -inset-4 bg-rust/20 blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
                  <img 
@@ -121,7 +120,7 @@ const Music: React.FC = () => {
                         and melodies built to carry both tension and release.
                     </p>
                     <p>
-                        The album captures a formative chapter\u2014ambition, friction, and momentum\u2014presented as a cohesive statement 
+                        The album captures a formative chapter—ambition, friction, and momentum—presented as a cohesive statement 
                         that honors the original energy while landing firmly in the present.
                     </p>
                 </div>
@@ -129,9 +128,9 @@ const Music: React.FC = () => {
                 <div className="pt-6 border-t border-white/10">
                     <p className="text-xs uppercase tracking-widest text-rust font-bold mb-4">Tracks Include</p>
                     <ul className="text-lg md:text-xl font-display italic text-paper/80 space-y-2">
-                        <li>\"The Fallout\"</li>
-                        <li>\"Chasing A Sunset\"</li>
-                        <li>\"Restless Heart\"</li>
+                        <li>"The Fallout"</li>
+                        <li>"Chasing A Sunset"</li>
+                        <li>"Restless Heart"</li>
                     </ul>
                 </div>
 
