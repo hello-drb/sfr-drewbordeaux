@@ -1,0 +1,7 @@
+{
+  "rewrites": [
+    { "source": "/drewbordeaux/assets/:path*", "destination": "/assets/:path*" },
+    { "source": "/drewbordeaux", "destination": "/index.html" },
+    { "source": "/drewbordeaux/:path*", "destination": "/index.html" }
+  ]
+}
