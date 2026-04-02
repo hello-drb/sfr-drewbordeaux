@@ -1,8 +1,3 @@
-import { defineCliConfig } from "sanity/cli";
-
-export default defineCliConfig({
-  api: {
-    projectId: "yjdb06f8",
-    dataset: "production",
-  },
-});
+// SANITY CMS — NOT ACTIVE
+// See sanity.config.ts for details.
+export {};

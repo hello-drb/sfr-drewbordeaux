@@ -1,9 +1,7 @@
-import { NextStudio } from "next-sanity/studio";
-import config from "../../../../sanity.config";
-
-export const dynamic = "force-static";
-export { metadata, viewport } from "next-sanity/studio";
-
+// SANITY STUDIO — NOT ACTIVE
+// This route will mount the Sanity Studio when CMS is wired up.
+// For now, redirect to home.
+import { redirect } from "next/navigation";
 export default function StudioPage() {
-  return <NextStudio config={config} />;
+  redirect("/");
 }

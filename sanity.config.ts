@@ -1,13 +1,5 @@
-import { defineConfig } from "sanity";
-import { structureTool } from "sanity/structure";
-import { visionTool } from "@sanity/vision";
-import { schemaTypes } from "@/sanity/schemaTypes";
-
-export default defineConfig({
-  name: "drewbordeaux",
-  title: "Drew Bordeaux",
-  projectId: "yjdb06f8",
-  dataset: "production",
-  plugins: [structureTool(), visionTool()],
-  schema: { types: schemaTypes },
-});
+// SANITY CMS — NOT ACTIVE
+// Sanity project yjdb06f8 exists with schema deployed.
+// This file is a placeholder for future CMS integration.
+// To activate: uncomment sanity deps in package.json, restore /src/sanity/ files.
+export {};
