@@ -1,4 +1,5 @@
 {
+  "ignoreCommand": "exit 0",
   "rewrites": [
     { "source": "/drewbordeaux/assets/:path*", "destination": "/assets/:path*" },
     { "source": "/drewbordeaux", "destination": "/index.html" },
