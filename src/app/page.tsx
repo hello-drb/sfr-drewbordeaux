@@ -37,10 +37,31 @@ const PRESS = [
   "Recording Academy",
 ];
 
+const CLIENT_ZONES = [
+  {
+    label: "Artists & Creators",
+    description:
+      "Musicians, performers, writers, and makers who need their visual world to match the depth of their work.",
+    examples: "Grammy-winning vocalists. Broadway performers. Touring artists. NYT bestselling authors.",
+  },
+  {
+    label: "Founders & Leaders",
+    description:
+      "Entrepreneurs, executives, and coaches whose brand should reflect the level they\u2019re operating at.",
+    examples: "Festival executives. Hospitality groups. Marketing consultants. Nonprofit leaders.",
+  },
+  {
+    label: "Brands & Cultural Projects",
+    description:
+      "Ensembles, labels, and cultural institutions building a cohesive identity across every touchpoint.",
+    examples: "Chamber ensembles. Couture tailors. E-commerce brands. Record labels.",
+  },
+];
+
 export default function HomePage() {
   return (
     <>
-      {/* \u2550\u2550\u2550 HERO \u2550\u2550\u2550 */}
+      {/* ═══ HERO ═══ */}
       <section className="relative h-screen flex flex-col items-center justify-center overflow-hidden bg-charcoal">
         <div className="absolute inset-0 z-0">
           <img
@@ -68,7 +89,19 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* \u2550\u2550\u2550 THE VERTICALS \u2550\u2550\u2550 */}
+      {/* ═══ BRAND HEADLINE ═══ */}
+      <section className="py-24 px-6 bg-charcoal border-t border-bone/5">
+        <SectionReveal>
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="font-display text-3xl sm:text-4xl md:text-5xl uppercase tracking-wide text-bone leading-[1.1]">
+              Creative direction and brand architecture that makes the world see{" "}
+              <span className="text-rust">what you&rsquo;re building.</span>
+            </h2>
+          </div>
+        </SectionReveal>
+      </section>
+
+      {/* ═══ THE VERTICALS ═══ */}
       <section className="py-32 px-6 bg-paper">
         <div className="max-w-[1400px] mx-auto">
           <SectionReveal>
@@ -128,7 +161,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* \u2550\u2550\u2550 PHILOSOPHY \u2550\u2550\u2550 */}
+      {/* ═══ PHILOSOPHY ═══ */}
       <section className="py-32 px-6 bg-spruce relative overflow-hidden">
         <div
           className="absolute inset-0 opacity-20"
@@ -145,9 +178,12 @@ export default function HomePage() {
             </p>
             <div className="w-16 h-[2px] bg-bone/20 mx-auto mt-12 mb-8" />
             <p className="text-bone/70 text-sm font-sans font-light leading-relaxed max-w-xl mx-auto">
-              Six creative disciplines. One unified vision. DrewBordeaux.com is
-              the 7th Vista &mdash; the elevated view where AI film, photography,
-              creative direction, and music converge into a singular practice.
+              Twenty years across six creative disciplines. A psychology
+              background that informs every brand engagement. One person who
+              handles every layer &mdash; from strategy to shoot day to the
+              systems that deliver the work to the world. The same instinct
+              that produces an album, art-directs a visual identity, and builds
+              the digital infrastructure to support it all.
             </p>
             <Link
               href="/about"
@@ -159,7 +195,7 @@ export default function HomePage() {
         </SectionReveal>
       </section>
 
-      {/* \u2550\u2550\u2550 SOCIAL PROOF \u2550\u2550\u2550 */}
+      {/* ═══ SOCIAL PROOF ═══ */}
       <section className="py-24 bg-charcoal overflow-hidden">
         <SectionReveal>
           <div className="text-center mb-16">
@@ -180,8 +216,42 @@ export default function HomePage() {
         </SectionReveal>
       </section>
 
-      {/* \u2550\u2550\u2550 SIGNAL ARCHITECTURE \u2550\u2550\u2550 */}
+      {/* ═══ WHO THIS SERVES ═══ */}
       <section className="py-32 px-6 bg-paper">
+        <div className="max-w-[1200px] mx-auto">
+          <SectionReveal>
+            <div className="text-center mb-20">
+              <span className="text-spruce text-[11px] uppercase tracking-[0.3em] font-bold block mb-4">
+                Client Zones
+              </span>
+              <h2 className="font-display text-4xl md:text-6xl uppercase tracking-wide text-ink">
+                Who Finds <span className="text-rust">Drew</span>
+              </h2>
+            </div>
+          </SectionReveal>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            {CLIENT_ZONES.map((zone, i) => (
+              <SectionReveal key={zone.label} delay={i * 150}>
+                <div className="border border-ink/10 p-10 h-full">
+                  <h3 className="font-display text-xl uppercase tracking-wide text-ink mb-4">
+                    {zone.label}
+                  </h3>
+                  <p className="text-stone font-light leading-relaxed mb-6">
+                    {zone.description}
+                  </p>
+                  <p className="text-[11px] uppercase tracking-[0.15em] text-stone/50 font-medium leading-relaxed">
+                    {zone.examples}
+                  </p>
+                </div>
+              </SectionReveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ═══ SIGNAL ARCHITECTURE ═══ */}
+      <section className="py-32 px-6 bg-sand/30">
         <SectionReveal>
           <div className="max-w-[1000px] mx-auto">
             <div className="grid md:grid-cols-2 gap-16 items-center">
@@ -194,11 +264,18 @@ export default function HomePage() {
                   <br />
                   Architecture
                 </h2>
+                <p className="text-stone font-light leading-relaxed mb-6">
+                  Not branding. Not marketing. Signal Architecture is the
+                  coherent throughline connecting how a creative practice looks,
+                  how it sounds, and how it&rsquo;s found &mdash; from visual
+                  identity to content strategy to the systems that deliver
+                  the work to the world.
+                </p>
                 <p className="text-stone font-light leading-relaxed mb-10">
-                  I don&rsquo;t build brands. I architect signals &mdash; the coherent
-                  throughline connecting how you look, how you sound, and how
-                  you&rsquo;re found. From visual identity to content strategy to
-                  the systems that deliver your work to the world.
+                  Every engagement starts with deep discovery. The psychology
+                  background informs the strategy. The creative skills build
+                  the deliverables. The technical fluency makes the systems
+                  run. One practice. Every layer.
                 </p>
                 <Link
                   href="/services"
@@ -208,7 +285,7 @@ export default function HomePage() {
                 </Link>
               </div>
               <div className="relative">
-                <div className="aspect-square bg-sand/50 border border-ink/5 flex items-center justify-center">
+                <div className="aspect-square bg-paper border border-ink/5 flex items-center justify-center">
                   <div className="text-center space-y-4 p-12">
                     <div className="w-12 h-12 border border-ink/10 rounded-full mx-auto flex items-center justify-center">
                       <div className="w-3 h-3 bg-rust rounded-full" />
@@ -228,11 +305,11 @@ export default function HomePage() {
         </SectionReveal>
       </section>
 
-      {/* \u2550\u2550\u2550 NEWSLETTER \u2550\u2550\u2550 */}
-      <section className="py-24 bg-sand/50 px-6">
+      {/* ═══ NEWSLETTER ═══ */}
+      <section className="py-24 bg-charcoal px-6">
         <SectionReveal>
           <div className="max-w-lg mx-auto text-center">
-            <h3 className="font-display text-3xl uppercase tracking-wide text-ink mb-4">
+            <h3 className="font-display text-3xl uppercase tracking-wide text-bone mb-4">
               Stay in the Signal
             </h3>
             <p className="text-stone text-sm font-light mb-8">
@@ -242,15 +319,33 @@ export default function HomePage() {
               <input
                 type="email"
                 placeholder="your@email.com"
-                className="flex-1 bg-transparent border-b border-ink/20 py-3 text-ink focus:outline-none focus:border-rust transition-colors placeholder:text-stone/30 font-sans"
+                className="flex-1 bg-transparent border-b border-bone/20 py-3 text-bone focus:outline-none focus:border-rust transition-colors placeholder:text-stone/30 font-sans"
               />
               <button
                 type="submit"
-                className="text-[11px] uppercase tracking-[0.2em] text-ink hover:text-rust transition-colors py-3 px-6 border border-ink/20 hover:border-rust"
+                className="text-[11px] uppercase tracking-[0.2em] text-bone hover:text-rust transition-colors py-3 px-6 border border-bone/20 hover:border-rust"
               >
                 Subscribe
               </button>
             </form>
+          </div>
+        </SectionReveal>
+      </section>
+
+      {/* ═══ CLOSING CTA ═══ */}
+      <section className="py-32 px-6 bg-paper">
+        <SectionReveal>
+          <div className="max-w-3xl mx-auto text-center">
+            <h2 className="font-display text-4xl md:text-6xl uppercase tracking-wide text-ink leading-[1.1] mb-8">
+              Your brand should feel as remarkable as{" "}
+              <span className="text-rust">the work you&rsquo;re doing.</span>
+            </h2>
+            <Link
+              href="/contact"
+              className="inline-flex items-center gap-3 bg-charcoal text-bone text-[11px] uppercase tracking-[0.2em] px-10 py-4 hover:bg-rust transition-colors duration-300"
+            >
+              Start a Conversation <ArrowRight size={14} />
+            </Link>
           </div>
         </SectionReveal>
       </section>

@@ -1,4 +1,5 @@
 import SectionReveal from "@/components/SectionReveal";
+import { ArrowRight } from "lucide-react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -15,16 +16,21 @@ export default function ContactPage() {
           <span className="text-spruce text-[11px] uppercase tracking-[0.3em] font-bold block mb-6 animate-fade-in">
             Get in Touch
           </span>
-          <h1 className="font-display text-6xl md:text-8xl uppercase tracking-wide text-ink leading-[0.9] animate-slide-up">
-            Contact
+          <h1 className="font-display text-6xl md:text-8xl uppercase tracking-wide text-ink leading-[0.9] animate-slide-up mb-6">
+            Let&rsquo;s Talk
           </h1>
+          <p className="text-stone font-light text-lg leading-relaxed max-w-xl opacity-0 animate-slide-up-delay">
+            Tell me what you&rsquo;re building. Every engagement starts with a
+            real conversation &mdash; no pitch deck, no questionnaire, just a
+            discussion about where you are and where you want to go.
+          </p>
         </div>
       </section>
 
       <div className="w-full h-px bg-ink/10 max-w-[800px] mx-auto" />
 
       <section className="py-20 md:py-32 px-6 bg-paper">
-        <div className="max-w-[800px] mx-auto grid md:grid-cols-[1fr_250px] gap-16 md:gap-24">
+        <div className="max-w-[800px] mx-auto grid md:grid-cols-[1fr_280px] gap-16 md:gap-24">
           <SectionReveal>
             <form className="space-y-10">
               <div className="space-y-2">
@@ -51,26 +57,29 @@ export default function ContactPage() {
               </div>
               <div className="space-y-2">
                 <label className="text-[10px] uppercase tracking-[0.2em] text-stone/60 font-bold block">
-                  Interest
+                  What Are You Looking For?
                 </label>
                 <select className="w-full bg-transparent border-b border-ink/20 py-3 text-ink focus:outline-none focus:border-rust transition-colors font-sans text-lg font-light appearance-none">
-                  <option>Creative Direction</option>
-                  <option>Visual Identity</option>
-                  <option>Music Production</option>
-                  <option>AI Film</option>
-                  <option>Signal Architecture</option>
-                  <option>General Inquiry</option>
+                  <option value="">Select one...</option>
+                  <option>Creative Direction &mdash; full brand architecture</option>
+                  <option>Visual Identity &mdash; photography, video, art direction</option>
+                  <option>Content Strategy &mdash; editorial, voice, platform</option>
+                  <option>AI Workflows &mdash; creative tools and systems</option>
+                  <option>Signal Architecture Audit &mdash; where do I start?</option>
+                  <option>Music Production &mdash; recording, mixing, direction</option>
+                  <option>Collaboration &mdash; creative partnership</option>
+                  <option>Something Else</option>
                 </select>
               </div>
               <div className="space-y-2">
                 <label className="text-[10px] uppercase tracking-[0.2em] text-stone/60 font-bold block">
-                  Message
+                  Tell Me About Your Project
                 </label>
                 <textarea
                   rows={5}
                   required
                   className="w-full bg-transparent border-b border-ink/20 py-3 text-ink focus:outline-none focus:border-rust transition-colors font-sans text-lg font-light resize-none"
-                  placeholder="Tell me about your project..."
+                  placeholder="What are you building? Where do you want to take it?"
                 />
               </div>
               <button
@@ -103,9 +112,19 @@ export default function ContactPage() {
               </div>
               <div>
                 <h4 className="text-[10px] uppercase tracking-[0.3em] text-stone/40 font-bold mb-4">
-                  Social
+                  Connect
                 </h4>
                 <ul className="space-y-2 text-sm">
+                  <li>
+                    <a
+                      href="https://linkedin.com/in/drewbordeaux"
+                      className="text-stone hover:text-rust transition-colors"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      LinkedIn
+                    </a>
+                  </li>
                   <li>
                     <a
                       href="https://instagram.com/drewsounds"
@@ -127,6 +146,24 @@ export default function ContactPage() {
                     </a>
                   </li>
                 </ul>
+              </div>
+
+              <div className="border-t border-ink/10 pt-10">
+                <h4 className="text-[10px] uppercase tracking-[0.3em] text-stone/40 font-bold mb-4">
+                  What Happens Next
+                </h4>
+                <div className="space-y-4 text-sm text-stone font-light leading-relaxed">
+                  <p>
+                    I&rsquo;ll read your message and respond within 24 hours.
+                    If it&rsquo;s a good fit, we&rsquo;ll schedule a call to
+                    talk through your project in detail.
+                  </p>
+                  <p>
+                    No sales pitch. Just a real conversation about what
+                    you&rsquo;re building and whether working together makes
+                    sense.
+                  </p>
+                </div>
               </div>
             </div>
           </SectionReveal>
