@@ -1,5 +1,6 @@
 import Link from "next/link";
 import SectionReveal from "@/components/SectionReveal";
+import { ArrowRight } from "lucide-react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -30,7 +31,7 @@ export default function AboutPage() {
         <div className="max-w-[700px] mx-auto">
           <SectionReveal>
             <p className="font-serif italic text-xl md:text-2xl text-ink/80 leading-relaxed border-l-4 border-spruce pl-6 mb-16">
-              &ldquo;It&rsquo;s not just about the song. It&rsquo;s about the world it lives in.&rdquo;
+              &ldquo;It\u2019s not just about the song. It\u2019s about the world it lives in.&rdquo;
             </p>
           </SectionReveal>
 
@@ -43,7 +44,7 @@ export default function AboutPage() {
               </p>
               <p>
                 But they share a common philosophy: <strong className="text-ink font-medium">excavation, not superimposition.</strong> The
-                best creative direction doesn&rsquo;t invent an identity from scratch. It pays
+                best creative direction doesn\u2019t invent an identity from scratch. It pays
                 close attention to the influences, moods, and ideas already present &mdash; then
                 shapes the work around them to create something cohesive and true.
               </p>
@@ -67,9 +68,14 @@ export default function AboutPage() {
                   the current visual language, the current signal.
                 </p>
                 <p>
-                  This site will change. It will evolve as the work evolves. What you&rsquo;re
+                  A sense of permanence is what stops creatives from moving forward. The internet
+                  may never forget, but for most intents and purposes it has a short memory &mdash;
+                  and we get to guide the experience. New color palette, new offering, always evolving.
+                </p>
+                <p>
+                  This site will change. It will evolve as the work evolves. What you\u2019re
                   seeing now is the first era &mdash; and the build process itself is the first
-                  proof of concept: a creative director&rsquo;s site built with the same
+                  proof of concept: a creative director\u2019s site built with the same
                   AI-augmented workflows being offered as a service.
                 </p>
               </div>
@@ -83,7 +89,7 @@ export default function AboutPage() {
               </h2>
               <div className="space-y-6 font-sans font-light leading-relaxed text-stone">
                 <p>
-                  A classically trained violinist since age 5, Drew&rsquo;s evolution from the
+                  A classically trained violinist since age 5, Drew\u2019s evolution from the
                   conservatory to the stage birthed a distinct sonic signature &mdash; an electric
                   violin style channeling Jimi Hendrix paired with percussive acoustic guitar.
                   That same attention to texture and detail carries into every discipline.
@@ -95,13 +101,39 @@ export default function AboutPage() {
                   artists Jazzmeia Horn, Nicole Zuraitis, and Cyrille Aim\u00e9e.
                 </p>
                 <p>
-                  As a music producer, he helmed Becki Davis&rsquo;s debut <em className="font-serif">Lost &amp; Found</em>,
+                  As a music producer, he helmed Becki Davis\u2019s debut <em className="font-serif">Lost &amp; Found</em>,
                   which reached #7 on the Folk Alliance International Top Albums Chart. His own
                   debut album <em className="font-serif">Impulse / Instinct</em> established
                   his recorded voice. A new album, <em className="font-serif">Dust Between Galaxies</em>,
                   arrives Spring 2026.
                 </p>
               </div>
+            </div>
+          </SectionReveal>
+
+          <SectionReveal delay={400}>
+            <div className="mt-20 pt-20 border-t border-ink/10">
+              <h2 className="font-display text-3xl md:text-4xl uppercase tracking-wide text-ink mb-8">
+                Signal Architecture
+              </h2>
+              <div className="space-y-6 font-sans font-light leading-relaxed text-stone">
+                <p>
+                  The natural extension of this practice is helping other creatives find their own
+                  signal. Signal Architecture is the offering: visual identity, content strategy,
+                  automation, and AI-augmented workflows delivered as a cohesive creative package.
+                </p>
+                <p>
+                  The principle is always the same &mdash; excavation, not superimposition. The creative
+                  director\u2019s job isn\u2019t to impose a vision. It\u2019s to pay close enough attention to
+                  reveal one.
+                </p>
+              </div>
+              <Link
+                href="/services"
+                className="inline-flex items-center gap-3 mt-10 bg-charcoal text-bone text-[11px] uppercase tracking-[0.2em] px-8 py-4 hover:bg-rust transition-colors duration-300"
+              >
+                Explore Services <ArrowRight size={14} />
+              </Link>
             </div>
           </SectionReveal>
         </div>
